@@ -95,7 +95,7 @@ class War {
     let randomTarget = this.targetArmy[randomTargetIndex];
 
     let casualty = randomTarget.receiveDamage(randomAttacker.strength);
-    if (randomTarget.health <= 0) attacker.splice(randomTargetIndex, 1);
+    if (randomTarget.health <= 0) target.splice(randomTargetIndex, 1);
     return casualty;
   }
 
